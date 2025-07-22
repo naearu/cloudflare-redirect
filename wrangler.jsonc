@@ -5,7 +5,7 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "3dique",
-	"vars": { "redirect_to": "https://blog.naver.com/xx22zzz" },
+	"vars": { "REDIRECT_TO": "https://blog.naver.com/xx22zzz" },
 	"main": "src/index.ts",
 	"compatibility_date": "2025-04-03",
 	"observability": {
