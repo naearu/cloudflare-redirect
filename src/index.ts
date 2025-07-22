@@ -1,10 +1,9 @@
-export interface Env {
-  REDIRECT_TO: string;
-}
+// require('dotenv').config()
+
 
 export default {
-	async fetch(request): Promise<Response> {
-		const destinationURL = `${env.REDIRECT_TO}`;
+	async fetch(request, env, ctx): Promise<Response> {
+		const destinationURL = env.REDIRECT_TO;
 		const statusCode = 301;
 		return Response.redirect(destinationURL, statusCode);
 	},
